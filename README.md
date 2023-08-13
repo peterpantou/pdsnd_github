@@ -21,6 +21,19 @@ The project involves the following key steps:
 
     Interactive experience: As an additional challenge, the project suggests creating an interactive experience in the terminal, where users can input their preferences and get specific information about the bike share data.
 
+### Installation Instructions and Software Dependencies
+
+#### Installation Instructions
+1. Install _Anaconda_ for your OS
+2. Run _Spyder_ through Anaconda
+3. Load _bikeshare_2.py_ file in _Spyder_ application
+4. Run file (F5)
+5. Input selection of city, month(s), day(s) as requested
+
+#### Software Dependencies
+Windows 10 and above
+
+MacOS X
 
 ### Files used
 bikeshare_2.py
