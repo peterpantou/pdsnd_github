@@ -9,7 +9,7 @@ The project "Explore US Bikeshare Data" is about analyzing and exploring data re
 
 The project involves the following key steps:
 
-    Importing the data: The project requires importing the data files for each city, which contain information about bike share trips, such as start time, end time, trip duration, and user type.
+    Importing the data: The project requires importing the data files for 3 US cities (Chicago, New York and Washington), which contain information about bike share trips, such as start time, end time, trip duration, and user type.
 
     Data wrangling: The data from the three cities may have different formats and structures. The project involves cleaning and unifying the data to ensure consistency and ease of analysis.
 
