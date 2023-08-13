@@ -28,16 +28,16 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input("Please enter a city (Chicago, New York City, Washington): ").lower()
 
-# Define a list of valid cities
+    # Define a list of valid cities
     valid_cities = ['chicago', 'new york city', 'washington']
     
-# Define a list of valid months
+    # Define a list of valid months
     valid_months = ['january', 'february', 'march', 'april', 'may', 'june']
     
-# Define a list of valid days
+    # Define a list of valid days
     valid_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
-# Use a while loop to handle invalid inputs
+    # Use a while loop to handle invalid inputs
     while city.lower() not in valid_cities:
         print("Invalid input. Please try again.")
         city = input("Please enter a city (Chicago, New York City, Washington): ").lower()
@@ -69,7 +69,7 @@ def load_data(city, month, day):
     """
     file_name = CITY_DATA[city]
     df = pd.read_csv(file_name)
-     # convert the Start Time column to datetime
+    # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
@@ -192,11 +192,7 @@ def user_stats(df):
     print(user_type_counts)
 
     # TO DO: Display counts of gender
-#    gender_counts = df['Gender'].value_counts()
-
-#    print("Counts per gender:")
-#    print(gender_counts)
-# Check if 'Gender' column exists
+    # Check if 'Gender' column exists
     if 'Gender' in df.columns:
         gender_counts = df['Gender'].value_counts()
         print("Counts of gender:")
